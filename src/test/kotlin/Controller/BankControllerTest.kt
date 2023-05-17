@@ -11,7 +11,7 @@ import org.springframework.test.web.servlet.get
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class BankControllerTest {
+internal class BankControllerTest {
 
     @Autowired
     lateinit var mockMvc : MockMvc //Allows making request without http requests
@@ -28,6 +28,26 @@ class BankControllerTest {
                     value("67745")
                 }
             }  //check for all the http codes eg 404 not found or 200 ok
+        
+        
+        
+        //then
+        
+        
+        }
+    
+    @Test
+    fun `should return the bank with a given account number `() {
+        //given
+        val accountNumber = 67745
+
+
+        
+        
+        //when
+        mockMvc.get("api/banks/$accountNumber")
+            .andDo { print() }
+            .andExpect { status { isOk() } }
         
         
         
