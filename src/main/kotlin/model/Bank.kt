@@ -3,7 +3,7 @@ package model
 import org.apache.tomcat.util.descriptor.web.ContextTransaction
 
 
-//This is a data transfer object (that is transferred over the network
+//This is a data transfer object (that is transferred over the network)
 
 
 /**
