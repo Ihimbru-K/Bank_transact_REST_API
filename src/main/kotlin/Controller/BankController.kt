@@ -1,5 +1,4 @@
 package Controller
-//
 import Service.BankService
 import model.Bank
 import org.springframework.web.bind.annotation.GetMapping
